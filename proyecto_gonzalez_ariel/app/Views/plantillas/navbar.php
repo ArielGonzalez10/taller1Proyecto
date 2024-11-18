@@ -1,42 +1,44 @@
-<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-  <div class="container-fluid">
-    <!-- Logotipo o Nombre -->
-    <a class="navbar-brand text-white" href="principal.html">FrikiVerse</a>
-    
-    <!-- Botones de la barra -->
-    <div class="d-flex">
+<!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      
+      <!-- Título o Logo -->
+      <a class="navbar-brand" href="principal.html">FrikiVerse</a>
+      
+      <!-- Botón desplegable para móviles -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url('principal');?>">Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url('comercializacion');?>">Comercialización</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url('quienesSomos');?>">¿Quiénes Somos?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url('contacto');?>">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?php echo base_url('terminosyUsos');?>">Términos y Usos</a>
+          </li>
+        </ul>
         
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('principal.php');?>">Principal</a>
-      </li>  
-
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('comercializacion.php');?>">Comercialización</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('quienesSomos.php');?>">Quiénes Somos</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('contacto.php');?>">Contacto</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url('terminosyUsos.php');?>">Términos y Usos</a>
-      </li>
-      
+        <!-- Botones de Inicio de Sesión y Registro -->
+        <div class="d-flex">
+          <button class="btn btn-outline-dark me-2" type="button">Iniciar Sesión</button>
+          <button class="btn btn-dark" type="button">Registrarse</button>
+        </div>
+      </div>
     </div>
+  </nav>
 
-    <!-- Botones de registro e inicio de sesión -->
-    <form class="container-fluid justify-content-start p-0" role="search">
-          <div class="d-flex justify-content-end">
-              <button class="btn btn-success me-2" type="button">Registrarse</button>
-              <button class="btn btn-sm btn-outline-light" type="button">Iniciar Sesion</button>
-            </div>
-    </form>
-
-  </div>
-</nav>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <?php

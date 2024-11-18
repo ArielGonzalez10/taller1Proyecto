@@ -1,0 +1,63 @@
+/* Fondo blanco para la barra de navegación */
+.navbar {
+  background-color: white !important; /* Fondo blanco */
+  border-bottom: 1px solid #ddd; /* Línea inferior sutil */
+  padding: 10px 20px; /* Espaciado interno */
+}
+
+/* Estilo para los enlaces del menú */
+.nav-link {
+  color: black !important; /* Letras negras */
+  border: 1px solid #ddd; /* Borde fino */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 5px 15px; /* Espaciado interno */
+  margin-right: 10px; /* Separación entre enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Letras en negrita */
+}
+
+.nav-link:hover {
+  background-color: #f8f9fa; /* Fondo gris claro al pasar el mouse */
+  color: #212529 !important; /* Letras más oscuras */
+}
+
+/* Botones de sesión y registro */
+.btn-outline-dark {
+  color: black; /* Letras negras */
+  border: 1px solid #ddd; /* Borde fino */
+  background-color: white; /* Fondo blanco */
+}
+
+.btn-outline-dark:hover {
+  background-color: #212529; /* Fondo negro al pasar el mouse */
+  color: white; /* Letras blancas */
+}
+
+.btn-dark {
+  color: white; /* Letras blancas */
+  background-color: black; /* Fondo negro */
+}
+
+.btn-dark:hover {
+  background-color: #555; /* Fondo gris oscuro */
+}
+
+/* Ajuste de separación entre botones */
+.d-flex > button {
+  margin-left: 10px; /* Separación entre los botones */
+}
+
+/* Contenedor para alinear los botones de sesión y registro a la derecha */
+.d-flex.justify-content-end {
+  margin-left: auto; /* Empuja los botones hacia la derecha */
+}
+
+/* Botón desplegable para dispositivos móviles */
+.navbar-toggler {
+  border: 1px solid #ddd; /* Borde fino */
+  background-color: white; /* Fondo blanco */
+}
+
+.navbar-toggler-icon {
+  background-color: #212529; /* Icono oscuro */
+}
